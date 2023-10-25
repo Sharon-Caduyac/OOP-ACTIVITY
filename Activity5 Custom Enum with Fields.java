@@ -1,33 +1,33 @@
 public class ColorEnumDemo {
 
     public enum Color {
-        RED(255, 0, 0),
-        GREEN(0, 255, 0),
-        BLUE(0, 0, 255),
+        Orange(255, 0, 0),
+        Pink(0, 255, 0),
+        Brown(0, 0, 255),
         YELLOW(255, 255, 0),
         CYAN(0, 255, 255),
         MAGENTA(255, 0, 255),
         WHITE(255, 255, 255),
         BLACK(0, 0, 0);
 
-        private int red;
-        private int green;
-        private int blue;
+        private int Orang;
+        private int Pink;
+        private int Brown;
 
-        Color(int red, int green, int blue) {
-            this.red = red;
-            this.green = green;
-            this.blue = blue;
+        Color(int Orange, int Pink, int Brown) {
+            this.Orange = Orange;
+            this.pink = Pink;
+            this.Brown= Brown;
         }
 
-        public void displayRGB() {
-            System.out.println(this.name() + ": RGB(" + red + ", " + green + ", " + blue + ")");
+        public void displayOPB() {
+            System.out.println(this.name() + ": OPB(" + Orange + ", " + Pink + ", " + Brown + ")");
         }
     }
 
     public static void main(String[] args) {
         for (Color color : Color.values()) {
-            color.displayRGB();
+            color.displayOPB();
         }
     }
 }

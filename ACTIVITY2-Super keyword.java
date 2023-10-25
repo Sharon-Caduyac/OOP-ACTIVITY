@@ -1,42 +1,42 @@
-class Vehicle {
+class Mini Bus {
     private String make;
     private int year;
 
-    public Vehicle(String make, int year) {
+    public Mini Bus(String make, int year) {
         this.make = make;
         this.year = year;
-        System.out.println("Vehicle constructor called.");
+        System.out.println("Mini Bus constructor called.");
     }
 
     public void start() {
-        System.out.println("Vehicle is starting.");
+        System.out.println("Mini Bus is starting.");
     }
 
     public void stop() {
-        System.out.println("Vehicle is stopping.");
+        System.out.println("Mini Bus is stopping.");
     }
 }
 
-class Car extends Vehicle {
+class Bus extends Mini Bus {
     private int numberOfDoors;
 
-    public Car(String make, int year, int numberOfDoors) {
-        super(make, year); // Call the base class constructor using super
+    public Bus(String make, int year, int numberOfDoors) {
+        super(make, year);
         this.numberOfDoors = numberOfDoors;
-        System.out.println("Car constructor called.");
+        System.out.println("Bus constructor called.");
     }
 
     @Override
     public void start() {
         super.start(); // Call the base class method using super
-        System.out.println("Car is starting.");
+        System.out.println("Bus is starting.");
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Car myCar = new Car("Toyota", 2022, 4);
-        myCar.start();
-        myCar.stop();
+        Bus myBus = new Bus("LCI", 2022, 4);
+        myBUS.start();
+        myBUS.stop();
     }
 }

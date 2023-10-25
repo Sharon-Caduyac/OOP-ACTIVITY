@@ -1,11 +1,11 @@
-public class DayOfWeekDemo {
+public class NameOfDays {
 
-    public enum DayOfWeek {
+    public enum NameOfDays {
         SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
     }
 
     public static void main(String[] args) {
-        DayOfWeek today = DayOfWeek.WEDNESDAY;
+        NameOfDays today = NameOfDays.WEDNESDAY;
 
         switch (today) {
             case MONDAY:
